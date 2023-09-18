@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+    console.log("App rendering")
     return (
         <div>
             <AppTitle />
@@ -24,7 +25,7 @@ function sayHi() {
 sayHi();
 
 function Rating() {
-    console.log("Rating rendered")
+    console.log("Rating rendering")
     return (
         <>
             <Star />
@@ -33,7 +34,7 @@ function Rating() {
 }
 
 function Star() {
-    console.log("Star rendered")
+    console.log("Star rendering")
     return (
         <>
             <div>star</div>
@@ -46,6 +47,7 @@ function Star() {
 }
 
 function Accordion() {
+    console.log("Accordion rendering")
     return (
         <div>
             <h3>Menu</h3>
