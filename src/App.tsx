@@ -3,51 +3,49 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-    debugger
     return (
         <div>
-            This is APP component
+            <AppTitle />
+            <Rating/>
+            <Accordion/>
             <Rating />
-            <Accordion />
         </div>
-
     );
 }
 
+function AppTitle() {
+    return <>This is App component</>
+}
+
 function sayHi() {
-    debugger
     alert("Hello!");
 }
+
 sayHi();
 
 function Rating() {
-    debugger
+    console.log("Rating rendered")
     return (
-        <div>
+        <>
             <Star />
-            <Star />
-            <Star />
-            <Star />
-            <Star />
-        </div>
+        </>
     );
 }
 
 function Star() {
-    debugger
+    console.log("Star rendered")
     return (
-        <div>
+        <>
             <div>star</div>
             <div>star</div>
             <div>star</div>
             <div>star</div>
             <div>star</div>
-        </div>
+        </>
     );
 }
 
 function Accordion() {
-    debugger
     return (
         <div>
             <h3>Menu</h3>
