@@ -27,7 +27,6 @@ function AppTitle() {
     );
 }
 
-
 function Rating() {
     console.log("Rating rendering")
     return (
