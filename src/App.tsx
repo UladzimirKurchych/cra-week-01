@@ -13,6 +13,10 @@ function App() {
     console.log("App rendering")
     return (
         <div>
+
+            <input/>
+            <input type="date"/>
+
             <AppTitle/>
             <Rating/>
             <Accordion/>
@@ -27,8 +31,5 @@ function AppTitle() {
         <>This is App component</>
     );
 }
-
-
-
 
 export default App;
