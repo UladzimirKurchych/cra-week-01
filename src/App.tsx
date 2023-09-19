@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Accordion from "./components/Accordion/Accordion";
+import {Rating} from "./components/Rating/Rating";
 
 function sayHi() {
     alert("Hello!");
@@ -25,28 +25,6 @@ function AppTitle() {
     console.log("AppTitle rendering")
     return (
         <>This is App component</>
-    );
-}
-
-function Rating() {
-    console.log("Rating rendering")
-    return (
-        <>
-            <Star/>
-        </>
-    );
-}
-
-function Star() {
-    console.log("Star rendering")
-    return (
-        <>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-        </>
     );
 }
 
