@@ -3,24 +3,24 @@ import './App.css';
 import Accordion from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
 
-function sayHi() {
-    alert("Hello!");
+function sum(a: number, b: number) {
+    alert(a + b);
 }
 
-sayHi();
+sum(2, 3);
 
 function App() {
     console.log("App rendering")
     return (
         <div>
-
-            <input/>
-            <input type="date"/>
-
             <AppTitle/>
-            <Rating/>
+
+            Article 1
+            <Rating value={3}/>
             <Accordion/>
-            <Rating/>
+
+            Article 2
+            <Rating value={4}/>
         </div>
     );
 }
@@ -28,7 +28,7 @@ function App() {
 function AppTitle() {
     console.log("AppTitle rendering")
     return (
-        <>This is App component</>
+        <div>This is App component</div>
     );
 }
 
