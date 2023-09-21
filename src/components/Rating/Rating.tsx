@@ -1,19 +1,23 @@
 import React from "react";
 
-export function Rating() {
+export function Rating(props: any) {
     console.log("Rating rendering")
     return (
         <div>
             <Star selected={true}/>
             <Star selected={true}/>
-            <Star selected={false}/>
-            <Star selectes={false}/>
+            <Star selected={true}/>
+            <Star selectes={true}/>
             <Star selected={false}/>
         </div>
     );
 }
 
-function Star() {
+function Star(props: any) {
     console.log("Star rendering")
-    return <span> <b>star_</b></span>
+    if(props.selected === true) {
+        return <span> <b>star_</b> </span>
+    } else {
+        return <span> star </span>
+    }
 }
