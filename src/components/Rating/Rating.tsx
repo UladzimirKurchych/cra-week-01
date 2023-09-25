@@ -7,7 +7,7 @@ export function Rating(props: any) {
             <Star selected={true}/>
             <Star selected={true}/>
             <Star selected={true}/>
-            <Star selectes={true}/>
+            <Star selected={true}/>
             <Star selected={false}/>
         </div>
     );
@@ -15,7 +15,7 @@ export function Rating(props: any) {
 
 function Star(props: any) {
     console.log("Star rendering")
-    if(props.selected === true) {
+    if (props.selected === true) {
         return <span> <b>star_</b> </span>
     } else {
         return <span> star </span>
