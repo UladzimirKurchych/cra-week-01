@@ -16,11 +16,11 @@ function App() {
             <AppTitle/>
 
             Article 1
-            <Rating value={3}/>
+            <Rating/>
             <Accordion/>
 
             Article 2
-            <Rating value={4}/>
+            <Rating/>
         </div>
     );
 }
