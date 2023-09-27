@@ -73,7 +73,6 @@ export function Rating(props: any) {
             </div>
         );
     }
-
 }
 
 function Star(props: any) {
