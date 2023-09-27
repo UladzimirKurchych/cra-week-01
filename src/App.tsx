@@ -3,11 +3,6 @@ import './App.css';
 import Accordion from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
 
-function sum(a: number, b: number) {
-    alert(a + b);
-}
-
-sum(2, 3);
 
 function App() {
     console.log("App rendering")
@@ -18,8 +13,8 @@ function App() {
 
             Article 1
             <Rating value={3}/>
-            <Accordion titleValue={"Menu 1"}/>
-            <Accordion titleValue={"Menu 2"}/>
+            <Accordion titleValue={"Menu"}/>
+            <Accordion titleValue={"Users"}/>
             Article 2
             <Rating value={4}/>
         </div>
