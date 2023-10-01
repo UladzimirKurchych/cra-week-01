@@ -11,17 +11,19 @@ function App() {
             <PageTitle title={"This is APP component"}/>
             <PageTitle title={"My friends!"}/>
 
-            Article 1
             <Rating value={3}/>
             <Accordion titleValue={"Menu"}/>
             <Accordion titleValue={"Users"}/>
-            Article 2
+
             <Rating value={4}/>
         </div>
     );
 }
 
-function PageTitle(props: any) {
+type PageTitlePropsType = {
+    title: String,
+}
+function PageTitle(props: PageTitlePropsType) {
     // debugger
     return (
         <h1> {props.title} </h1>
