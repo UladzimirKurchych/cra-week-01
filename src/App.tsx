@@ -5,7 +5,6 @@ import {Rating} from "./components/Rating/Rating";
 
 
 function App() {
-    console.log("App rendering")
     return (
         <div>
             <PageTitle title={"This is APP component"}/>
@@ -22,7 +21,6 @@ function App() {
 }
 
 function PageTitle(props: any) {
-    console.log("PageTitle rendering")
     return (
         <h1> {props.title} </h1>
     );
