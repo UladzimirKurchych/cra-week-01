@@ -1,7 +1,6 @@
 import React from "react";
 
 export function Rating(props: any) {
-    console.log("Rating rendering")
     if (props.value === 0) {
         return (
             <div>
@@ -76,7 +75,6 @@ export function Rating(props: any) {
 }
 
 function Star(props: any) {
-    console.log("Star rendering")
     if (props.selected === true) {
         return <span> <b>star_</b> </span>
     } else {
