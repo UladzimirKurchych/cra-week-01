@@ -1,6 +1,10 @@
 import React from "react";
 
-function Accordion(props: any) {
+
+type AccordionPropsType = {
+    titleValue: String,
+}
+function Accordion(props: AccordionPropsType) {
     debugger
     return (
         <div>
@@ -11,7 +15,11 @@ function Accordion(props: any) {
     );
 }
 
-function AccordionTitle(props: any) {
+
+type AccordionTitlePropsType = {
+    title: String,
+}
+function AccordionTitle(props: AccordionTitlePropsType) {
     debugger
     return (
         <h3>{props.title}</h3>
