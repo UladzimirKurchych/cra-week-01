@@ -5,7 +5,7 @@ import {Rating} from "./components/Rating/Rating";
 
 
 function App() {
-    debugger
+    //debugger
     return (
         <div>
             <PageTitle title={"This is APP component"}/>
@@ -13,8 +13,8 @@ function App() {
 
             Article 1
             <Rating value={3}/>
-            <Accordion />
-            <Accordion />
+            <Accordion titleValue={"Menu"}/>
+            <Accordion titleValue={"Users"}/>
             Article 2
             <Rating value={4}/>
         </div>
@@ -22,7 +22,7 @@ function App() {
 }
 
 function PageTitle(props: any) {
-    debugger
+    // debugger
     return (
         <h1> {props.title} </h1>
     );
