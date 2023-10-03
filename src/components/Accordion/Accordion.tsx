@@ -3,9 +3,9 @@ import React from "react";
 
 type AccordionPropsType = {
     titleValue: String,
+    collapsed: Boolean,
 }
 function Accordion(props: AccordionPropsType) {
-    debugger
     return (
         <div>
             <AccordionTitle title={props.titleValue}/>
